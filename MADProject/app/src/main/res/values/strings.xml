@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MAD Project</string>
+    <string name="username">username</string>
+    <string name="enter_password">enter password</string>
+    <string name="login">login</string>
+    <string name="enter_username">enter username</string>
+    <string name="enter_password1">enter password</string>
+    <string name="signup">signup</string>
+    <string name="back">back</string>
+    <string name="login1">Login</string>
+    <string name="sign_up1">Sign up</string>
+    <string name="loan_prediction_app">Loan Prediction App</string>
+    <string name="enter_salary">Enter Salary</string>
+    <string name="enter_collateral">Enter Collateral</string>
+    <string name="enter_cibil_score">Enter CIBIL Score</string>
+    <string name="calculate">Calculate</string>
+    <string name="developed_by_team_techtrio">Developed by Team TechTrio</string>
+</resources>

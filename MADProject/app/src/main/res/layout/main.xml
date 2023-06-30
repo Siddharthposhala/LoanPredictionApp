@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/loan_prediction_app"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/salaryEditText"
+        android:layout_width="384dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp"
+        android:hint="@string/enter_salary"
+        android:inputType="numberDecimal"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/collateralEditText"
+        android:layout_width="382dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/salaryEditText"
+        android:layout_marginTop="16dp"
+        android:hint="@string/enter_collateral"
+        android:inputType="numberDecimal"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/cibilScoreEditText"
+        android:layout_width="382dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/collateralEditText"
+        android:layout_marginTop="16dp"
+        android:hint="@string/enter_cibil_score"
+        android:inputType="number"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:layout_below="@id/cibilScoreEditText"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/loanAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teamDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developed_by_team_techtrio"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loanAmountTextView"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/loanAmountsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
